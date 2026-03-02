@@ -25,7 +25,7 @@
   "InstitutionName": "Beijing Normal University",
   "InstitutionalDepartmentName": "State Key Laboratory of Cognitive Neuroscience and Learning & IDG/McGovern Institute for Brain Research, Beijing Normal University",
   "Instructions": "Please keep your eyes on the central dot on the screen during the experiment, and judge whether the object in the image is animate or inanimate. Press the left key for animate and the right key for inanimate as quickly as possible after the image disappears. Press the left key to start the experiment when you are ready.",
-  "MISCChannelCount": 1,
+  "MISCChannelCount": 0,
   "Manufacturer": "n/a",
   "ManufacturersModelName": "NeuroScan",
   "PowerLineFrequency": 50.0,
