@@ -1,44 +1,103 @@
 {
   "version": "2.0",
-  "dataset_id": "on005811",
-  "source": "openneuro",
-  "source_id": "ds005811",
+  "pipeline_stage": "validated",
   "title": "NOD-EEG",
+  "license": "CC0",
+  "dataset_type": "raw",
   "authors": {
     "Guohao Zhang": {},
     "Ming Zhou": {},
     "Shuyi Zhen": {},
     "Shaohua Tang": {},
     "Zheng Li": {},
-    "Zonglei Zhen": {}
+    "Zonglei Zhen": {
+      "orcid": "0000-0002-6748-6434"
+    }
   },
-  "license": "CC0",
-  "dataset_type": "raw",
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds005811.v1.0.9",
       "identifier_type": "DOI",
       "relation_type": "IsIdenticalTo"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds004496",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on005811",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on005811",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.1038/s41597-025-05174-7",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.21105/joss.01896",
+      "identifier_type": "DOI",
+      "relation_type": "References"
     }
-  ],
-  "pipeline_stage": "seeded",
-  "bids_version": "1.10.1",
-  "recording_modality": [
-    "eeg"
-  ],
-  "datatypes": [
-    "eeg"
   ],
   "funding_references": [
     {
-      "funder_name": "Beijing Natural Science Foundation (#L247010)"
+      "funder_name": "Beijing Natural Science Foundation",
+      "award_number": "L247010"
     },
     {
-      "funder_name": "National Natural Science Foundation of China (#62433015, #31771251)"
+      "funder_name": "National Natural Science Foundation of China",
+      "award_number": "62433015"
     },
     {
-      "funder_name": "STI 2030-436 Major Projects of the Ministry of Science and Technology of China437 (#2021ZD0200407)"
+      "funder_name": "National Natural Science Foundation of China",
+      "award_number": "31771251"
+    },
+    {
+      "funder_name": "Ministry of Science and Technology of China",
+      "award_number": "2021ZD0200407",
+      "award_title": "STI 2030-Major Projects"
     }
   ],
-  "acknowledgements": "This research was supported by Beijing Natural Science Foundation (L247010), National Natural Science Foundation of China (62433015, 31771251) and STI 2030-Major Projects of the Ministry of Science and Technology of China (2021ZD0200407). The funders had no role in the study design; data collection, analysis, and interpretation; writing of the manuscript; or the decision to submit the article for publication."
+  "resource_type_general": "Dataset",
+  "sizes": [
+    "0.0 KB (1 files)"
+  ],
+  "formats": [
+    ".JPEG",
+    ".csv",
+    ".fif",
+    ".json",
+    ".md",
+    ".tsv"
+  ],
+  "description": "The Natural Object Dataset-EEG (NOD-EEG) is a multimodal neuroimaging dataset integrating electroencephalography (EEG) data collected from subjects viewing naturalistic object images from ImageNet. This dataset complements previously collected fMRI and MEG data from the same subjects and stimuli, enabling investigation of neural mechanisms underlying object recognition with high temporal resolution. The dataset includes raw EEG recordings, preprocessed data, and epoched data across multiple sessions and runs, along with comprehensive trial metadata and stimulus information.",
+  "methods_description": "EEG data were collected from subjects viewing naturalistic stimulus images from ImageNet. Raw data are stored in BIDS format with multiple sessions per subject. Data were preprocessed using MNE (version 1.7.1) and are available as both continuous time series and epoched formats. Trial information including stimulus category and subject responses are documented in detailed event files.",
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "object recognition"
+    },
+    {
+      "term": "naturalistic stimuli"
+    },
+    {
+      "term": "visual perception"
+    },
+    {
+      "term": "multimodal neuroimaging"
+    },
+    {
+      "term": "temporal dynamics"
+    }
+  ],
+  "source_hash": "0453a5ebaed17192b8cde0154258829c9c49255e6bb78973d79b2db71d3db4d6"
 }
