@@ -2,6 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "NOD-EEG",
+  "description": "The Natural Object Dataset (NOD) integrates electroencephalography (EEG), magnetoencephalography (MEG), and functional magnetic resonance imaging (fMRI) data collected from the same subjects viewing naturalistic object stimuli from ImageNet. This multimodal neuroimaging dataset enables investigation of neural mechanisms underlying object recognition in natural scenes by combining high spatial resolution (fMRI) with high temporal resolution (EEG/MEG) recordings, addressing limitations of single-modality approaches in characterizing both spatial representation patterns and temporal dynamics of visual cognitive processing.",
+  "methods_description": "EEG data were collected from subjects viewing naturalistic stimuli from ImageNet across multiple sessions and runs. Raw EEG data are stored in BIDS format with comprehensive trial information including stimulus category metadata and subject responses. Data were preprocessed using MNE (version 1.7.1) and organized into both continuous and epoched formats for analysis.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -14,12 +16,34 @@
       "orcid": "0000-0002-6748-6434"
     }
   },
-  "related_identifiers": [
+  "keywords": [
     {
-      "identifier": "10.18112/openneuro.ds005811.v1.0.9",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "term": "EEG"
     },
+    {
+      "term": "Magnetoencephalography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D015225"
+    },
+    {
+      "term": "object recognition"
+    },
+    {
+      "term": "Visual Perception",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D014796"
+    },
+    {
+      "term": "naturalistic stimuli"
+    },
+    {
+      "term": "multimodal neuroimaging"
+    },
+    {
+      "term": "temporal dynamics"
+    }
+  ],
+  "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds004496",
       "identifier_type": "DOI",
@@ -44,6 +68,11 @@
       "identifier": "10.21105/joss.01896",
       "identifier_type": "DOI",
       "relation_type": "References"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds005811.v1.0.9",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
     }
   ],
   "funding_references": [
@@ -67,7 +96,7 @@
   ],
   "resource_type_general": "Dataset",
   "sizes": [
-    "0.0 KB (1 files)"
+    "26.1 GB (81380 files)"
   ],
   "formats": [
     ".JPEG",
@@ -75,29 +104,8 @@
     ".fif",
     ".json",
     ".md",
-    ".tsv"
+    ".tsv",
+    ".yml"
   ],
-  "description": "The Natural Object Dataset-EEG (NOD-EEG) is a multimodal neuroimaging dataset integrating electroencephalography (EEG) data collected from subjects viewing naturalistic object images from ImageNet. This dataset complements previously collected fMRI and MEG data from the same subjects and stimuli, enabling investigation of neural mechanisms underlying object recognition with high temporal resolution. The dataset includes raw EEG recordings, preprocessed data, and epoched data across multiple sessions and runs, along with comprehensive trial metadata and stimulus information.",
-  "methods_description": "EEG data were collected from subjects viewing naturalistic stimulus images from ImageNet. Raw data are stored in BIDS format with multiple sessions per subject. Data were preprocessed using MNE (version 1.7.1) and are available as both continuous time series and epoched formats. Trial information including stimulus category and subject responses are documented in detailed event files.",
-  "keywords": [
-    {
-      "term": "EEG"
-    },
-    {
-      "term": "object recognition"
-    },
-    {
-      "term": "naturalistic stimuli"
-    },
-    {
-      "term": "visual perception"
-    },
-    {
-      "term": "multimodal neuroimaging"
-    },
-    {
-      "term": "temporal dynamics"
-    }
-  ],
-  "source_hash": "0453a5ebaed17192b8cde0154258829c9c49255e6bb78973d79b2db71d3db4d6"
+  "source_hash": "e2b1bdbc63ec162032db5a8551558c0c23e66ae356920e3d805e19cec7eaeef3"
 }
