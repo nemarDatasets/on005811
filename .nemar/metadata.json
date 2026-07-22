@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "NOD-EEG",
-  "description": "The Natural Object Dataset (NOD) integrates electroencephalography (EEG), magnetoencephalography (MEG), and functional magnetic resonance imaging (fMRI) data collected from the same subjects viewing naturalistic object stimuli from ImageNet. This multimodal neuroimaging dataset enables investigation of neural mechanisms underlying object recognition in natural scenes by combining high spatial resolution (fMRI) with high temporal resolution (EEG/MEG) recordings, addressing limitations of single-modality approaches in characterizing both spatial representation patterns and temporal dynamics of visual cognitive processing.",
-  "methods_description": "EEG data were collected from subjects viewing naturalistic stimuli from ImageNet across multiple sessions and runs. Raw EEG data are stored in BIDS format with comprehensive trial information including stimulus category metadata and subject responses. Data were preprocessed using MNE (version 1.7.1) and organized into both continuous and epoched formats for analysis.",
+  "description": "The Natural Object Dataset (NOD) integrates electroencephalography (EEG), magnetoencephalography (MEG), and functional magnetic resonance imaging (fMRI) data collected from the same subjects viewing naturalistic object stimuli from ImageNet. This multimodal neuroimaging resource combines high spatial resolution from fMRI with high temporal resolution from EEG and MEG to investigate neural mechanisms of object recognition in natural scenes, providing a unique opportunity to examine brain activity patterns across both stimuli and subjects.",
+  "methods_description": "EEG data were collected from subjects viewing naturalistic stimuli images from ImageNet. Raw EEG data are stored in BIDS format with multiple sessions per subject. Data were preprocessed using MNE (version 1.7.1) and are available as both continuous time series and epoched data. Trial information including stimulus category and subject responses are documented in detailed event files.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -21,17 +21,7 @@
       "term": "EEG"
     },
     {
-      "term": "Magnetoencephalography",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D015225"
-    },
-    {
       "term": "object recognition"
-    },
-    {
-      "term": "Visual Perception",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D014796"
     },
     {
       "term": "naturalistic stimuli"
@@ -40,7 +30,12 @@
       "term": "multimodal neuroimaging"
     },
     {
-      "term": "temporal dynamics"
+      "term": "Visual Perception",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D014796"
+    },
+    {
+      "term": "brain imaging"
     }
   ],
   "related_identifiers": [
@@ -96,7 +91,7 @@
   ],
   "resource_type_general": "Dataset",
   "sizes": [
-    "26.1 GB (81380 files)"
+    "26.1 GB (81384 files)"
   ],
   "formats": [
     ".JPEG",
