@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "NOD-EEG",
-  "description": "The Natural Object Dataset (NOD) integrates electroencephalography (EEG), magnetoencephalography (MEG), and functional magnetic resonance imaging (fMRI) data collected from the same subjects viewing naturalistic object stimuli from ImageNet. This multimodal neuroimaging resource combines high spatial resolution from fMRI with high temporal resolution from EEG and MEG to investigate neural mechanisms of object recognition in natural scenes, providing a unique opportunity to examine brain activity patterns across both stimuli and subjects.",
-  "methods_description": "EEG data were collected from subjects viewing naturalistic stimuli images from ImageNet. Raw EEG data are stored in BIDS format with multiple sessions per subject. Data were preprocessed using MNE (version 1.7.1) and are available as both continuous time series and epoched data. Trial information including stimulus category and subject responses are documented in detailed event files.",
+  "description": "NOD-EEG provides electroencephalography (EEG) recordings collected from the same subjects and using the same naturalistic ImageNet stimuli as the previously published NOD-fMRI dataset, extending the Natural Object Dataset (NOD) to include temporal dynamics of visual object recognition. Combined with companion MEG data, this multimodal resource enables investigation of neural mechanisms underlying object recognition across naturalistic scenes with both high spatial and high temporal resolution. The dataset includes raw and preprocessed EEG time series and epoched data, along with detailed trial-level event metadata.",
+  "methods_description": "EEG data were collected from subjects viewing naturalistic ImageNet stimuli identical to those used in the MEG and fMRI (NOD-fMRI) components of the dataset. Raw data are organized in BIDS format with subject and session directories; preprocessing was performed using MNE, producing cleaned continuous time series (.fif files) and concatenated epoch data per subject, with trial metadata including session, run, stimulus category, and subject responses documented in event CSV files.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -18,6 +18,11 @@
   },
   "keywords": [
     {
+      "term": "Electroencephalography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
+    },
+    {
       "term": "EEG"
     },
     {
@@ -27,15 +32,10 @@
       "term": "naturalistic stimuli"
     },
     {
+      "term": "visual cognition"
+    },
+    {
       "term": "multimodal neuroimaging"
-    },
-    {
-      "term": "Visual Perception",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D014796"
-    },
-    {
-      "term": "brain imaging"
     }
   ],
   "related_identifiers": [
@@ -84,9 +84,8 @@
       "award_number": "31771251"
     },
     {
-      "funder_name": "Ministry of Science and Technology of China",
-      "award_number": "2021ZD0200407",
-      "award_title": "STI 2030-Major Projects"
+      "funder_name": "STI 2030-Major Projects of the Ministry of Science and Technology of China",
+      "award_number": "2021ZD0200407"
     }
   ],
   "resource_type_general": "Dataset",
